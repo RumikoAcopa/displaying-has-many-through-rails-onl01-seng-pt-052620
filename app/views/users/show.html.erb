@@ -3,3 +3,4 @@
 <% @user.posts.each do |post| %>
   <%= link_to post.title, post_path(post) %>
 <% end %>
+<!--we want our users to see a list of all of the posts that they've commented on. Because we've set up a join model, the interface will look almost identical. We can simply call the posts method on our user and iterate through.>
